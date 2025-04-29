@@ -26,6 +26,16 @@ const Header: React.FC = () => {
             </li>
             <li>
               <Link 
+                to="/blog" 
+                className={`text-sm font-medium hover:text-blue-600 transition-colors ${
+                  location.pathname.startsWith('/blog') ? 'text-blue-600' : 'text-gray-700'
+                }`}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link 
                 to="/privacy" 
                 className={`text-sm font-medium hover:text-blue-600 transition-colors ${
                   location.pathname === '/privacy' ? 'text-blue-600' : 'text-gray-700'

@@ -11,3 +11,11 @@ export interface BMIHistoryItem extends BMIResult {
   weight: number;
   unit: 'metric' | 'imperial';
 }
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  content: string;
+}
